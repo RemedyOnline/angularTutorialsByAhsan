@@ -1,0 +1,18 @@
+input,
+button {
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+  /* margin: 8px; */
+  border: #555 solid;
+  /* outline: none; */
+}
+button {
+  background-color: #222;
+  color: white;
+}
+.searchh {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+}

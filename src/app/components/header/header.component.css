@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  border-bottom: #888 solid 1px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+}
+
+/* nav li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+} */
+
+nav a {
+  text-decoration: none;
+  /* border: #d2d2d2 solid; */
+}
+
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cta {
+  /* font-weight: bold; */
+  display: flex;
+  list-style: none;
+  gap: 4px;
+}
+
+.cta a {
+  background-color: white;
+  border-radius: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
+  font-weight: 500;
+}
+
+.cta a:first-child {
+  background-color: transparent;
+  border: white solid 1px;
+}
+.cta a:first-child:hover {
+  cursor: pointer;
+  background-color: #999;
+  border: transparent solid 1px;
+}
+
+.cta a:last-child {
+  color: #555;
+}
+
+.cta a:last-child:hover {
+  cursor: pointer;
+  background-color: #999;
+  color: white;
+}
