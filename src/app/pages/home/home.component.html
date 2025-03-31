@@ -38,10 +38,15 @@
 </form>
 <h1>Welcome to {{ title }}!</h1>
 <h3>Just used my {{mySignal()}}</h3>
+<section>
+   <div>
+      <button (click)="handleClick()">Click Me</button>
+      <input
+         type="text"
+         (keyup)="onKeyPress($event)"
+      />
+
+   </div>
+</section>
 <app-counter />
 <app-greetings [message]=homeMessage() />
-<p>
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, numquam
-   amet repellat vel labore doloremque nam atque cupiditate ea aperiam, earum
-   iusto. Tenetur, neque recusandae dolorem modi nisi aliquam in!
-</p>

@@ -14,17 +14,30 @@ export class HomeComponent {
   mySignal = signal('first signal instance bro!');
   homeMessage = signal('Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii!');
   searchParameter = '';
+
   searchHandler() {
     console.log('User typed: ', this.searchParameter, '  in the search box...');
   }
+
   handleSubmit(event: Event) {
     event.preventDefault();
     this.searchParameter = `You entered ${this.searchParameter}`;
   }
+
   searchBtnHandler() {
     console.log('Search btn clicked!!!!');
   }
+
   keyUpHandler(eventt: KeyboardEvent) {
     console.log(`User pressed the ${eventt.key} key!`);
+  }
+
+  // ---------------------------------------
+  handleClick() {
+    console.log('Button clicked!');
+  }
+
+  onKeyPress(event: KeyboardEvent) {
+    console.log('User pressed: ', (event.target as HTMLInputElement).value);
   }
 }
