@@ -7,3 +7,12 @@
   box-sizing: border-box;
   outline: none;
 }
+
+button {
+  background-color: white;
+  border-radius: 4px;
+  padding-inline: 4px;
+  padding-block: 4px;
+  font-weight: 500;
+  color: black;
+}

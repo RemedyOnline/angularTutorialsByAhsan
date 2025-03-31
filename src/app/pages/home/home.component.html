@@ -1,12 +1,47 @@
+<form
+   action=""
+   (submit)="handleSubmit($event)"
+   class="searchForm"
+>
+   <div class="searchh">
+      <input
+         type="search"
+         placeholder="Search for any product..."
+         (keyup)="searchHandler()"
+         [(ngModel)]="searchParameter"
+         name="search"
+      />
+      <button
+         type="submit"
+         (click)="searchBtnHandler()"
+      >Search</button>
+   </div>
+   <p>{{searchParameter}}</p>
+</form>
+<form
+   action=""
+   class="searchForm"
+>
+   <div class="searchh">
+      <input
+         type="search"
+         placeholder="Search for any product..."
+         (keyup)="keyUpHandler($event)"
+         name="search"
+      />
+      <button
+         type="submit"
+         (click)="searchBtnHandler()"
+      >Search</button>
+   </div>
+   <p>{{searchParameter}}</p>
+</form>
 <h1>Welcome to {{ title }}!</h1>
 <h3>Just used my {{mySignal()}}</h3>
+<app-counter />
 <app-greetings [message]=homeMessage() />
 <p>
    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, numquam
    amet repellat vel labore doloremque nam atque cupiditate ea aperiam, earum
    iusto. Tenetur, neque recusandae dolorem modi nisi aliquam in!
 </p>
-<div class="searchh">
-   <input type="search" />
-   <button>Search</button>
-</div>

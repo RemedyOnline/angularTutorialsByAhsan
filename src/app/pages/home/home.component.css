@@ -1,18 +1,28 @@
-input,
-button {
-  background-color: white;
-  padding: 8px;
-  border-radius: 8px;
-  /* margin: 8px; */
-  border: #555 solid;
-  /* outline: none; */
-}
 button {
   background-color: #222;
   color: white;
+  padding: 8px;
+  border-radius: 8px;
+
+  border: #555 solid;
 }
+
 .searchh {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 8px;
+  width: 100%;
+}
+
+.searchh input {
+  width: 60%;
+  background-color: white;
+  color: #000;
+  padding: 8px;
+  border-radius: 8px;
+  border: #555 solid;
+}
+
+.searchForm {
+  justify-items: center;
 }

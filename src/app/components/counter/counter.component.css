@@ -1,0 +1,18 @@
+.counter-section {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter-item {
+  justify-items: center;
+  border: #536896 solid;
+  border-radius: 20px;
+  margin: 5%;
+  padding: 5%;
+}
+
+.counter {
+  font-size: x-large;
+  font-weight: 800;
+}
