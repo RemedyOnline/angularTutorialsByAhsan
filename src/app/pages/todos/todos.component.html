@@ -1,1 +1,35 @@
-<p>todos works!</p>
+<h2>ToDo LIST</h2>
+<!-- <li>{{todoItems()[0].title}}</li> -->
+<hr>
+<!-- <p *ngIf="(!todoItems().length)">Loading ...</p> -->
+
+@if (!todoItems().length) {
+<p>Loading todos ...</p>
+}
+
+<label>Filter ToDos</label>
+<input
+   type="checkbox"
+   name=""
+   id=""
+>
+
+<ul>
+   @for (todo of todoItems(); track todo.id) {
+   <li>
+      <input
+         type="checkbox"
+         name="todo"
+         id="todo-{{todo.id}}"
+         [value]="todo.completed"
+      >
+      <label for="todo-{{todo.id}}">{{todo.title}}</label>
+   </li>
+   }
+</ul>
+<!-- <ol>
+   <li>{{todoServices.todoItems[0].title}}</li>
+   <li>{{todoServices.todoItems[1].title}}</li>
+   <li>{{todoServices.todoItems[2].title}}</li>
+   <li>{{todoServices.todoItems[3].title}}</li>
+</ol> -->
